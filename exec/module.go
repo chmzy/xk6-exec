@@ -9,10 +9,6 @@ import (
 	"go.k6.io/k6/js/modules"
 )
 
-func init() {
-	modules.Register("k6/x/exec", new(RootModule))
-}
-
 // RootModule is the global module object type. It is instantiated once per test
 // run and will be used to create `k6/x/exec` module instances for each VU.
 type RootModule struct{}
