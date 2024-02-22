@@ -6,5 +6,5 @@ import (
 )
 
 func init() {
-	modules.Register("k6/x/cmd", new(exec.RootModule))
+	modules.Register("k6/x/exec", new(exec.RootModule))
 }
